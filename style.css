@@ -1,0 +1,96 @@
+/* Reset styling */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #000;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Calculator table */
+table {
+    background-color: #1c1c1c;
+    border-collapse: separate;
+    border-spacing: 12px;
+    padding: 20px;
+    border-radius: 40px;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.7);
+}
+
+/* Input display */
+input#inputBox {
+    width: 100%;
+    height: 80px;
+    font-size: 48px;
+    text-align: right;
+    padding: 10px 20px;
+    background: transparent;
+    border: none;
+    color: white;
+    outline: none;
+}
+
+/* Base button styles */
+td {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    text-align: center;
+    vertical-align: middle;
+    font-size: 28px;
+    font-weight: 500;
+    cursor: pointer;
+    user-select: none;
+    transition: background 0.2s ease;
+    border: none;
+}
+
+/* Button hover/active */
+td:hover {
+    filter: brightness(1.2);
+}
+td:active {
+    filter: brightness(0.9);
+}
+
+/* Digit buttons */
+.digitBtn {
+    background-color: #333;
+    color: white;
+}
+
+/* Operator buttons */
+.operatorBtn {
+    background-color: #ff9500;
+    color: white;
+}
+
+/* AC button */
+.ACbtn {
+    background-color: #a5a5a5;
+    color: black;
+}
+
+/* Equal button */
+tr:last-child td {
+    background-color: #ff9500;
+    color: white;
+    font-size: 32px;
+    font-weight: bold;
+    border-radius: 40px;
+}
+
+/* Wide zero button */
+td[colspan="2"] {
+    width: 154px;
+    border-radius: 40px;
+    text-align: left;
+    padding-left: 26px;
+}
